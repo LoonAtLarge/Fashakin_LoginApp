@@ -1,0 +1,114 @@
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_height="match_parent" android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" tools:context=".RegisterActivity"
+
+    android:fillViewport="true"
+    >
+<LinearLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></Space>
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/prompt_first_name"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/prompt_last_name"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/prompt_dob"
+        android:inputType="date"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/registerpassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/prompt_password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/colorPrimary"
+         />
+    
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"></Space>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"></Space>
+
+    <Button
+        android:id="@+id/registration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="@color/colorPrimaryDark"
+        android:enabled="true"
+        android:onClick="registrationHandler"
+        android:text="@string/action_register"
+        android:textColor="@color/colorAccent"
+        />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"></Space>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
